@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* 
+Theme Name: Nutty Westerns
+Author: taichi
+Version 1.0
+*/
+
+@import url('js/jquery-1.8.3.min.js');
+@import url('dist/css/bootstrap.css'); 
+@import url('css/flat-ui.css'); 	
+@import url('js/typeahead.js'); 
+@import url('js/bootstrap.min.js'); 
+
+
+body {
+  padding-top: 53px;
+  padding-bottom: 40px;
+  background-color: #000000;
+}
+
+.box {
+  height: 500px;
+  background-color: #FFFFFF;
+}
+
+.box2 {
+  background-color: #FFFFFF;
+}
+
+.mainbg {
+  background-color: #660000;
+}
+
+.logo {
+  display:block;
+}
+
+.home {
+  background-color: #464646;
+}
+
+#hero article {
+	width: 36%;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: absolute;
+	top: 28px;
+	right: 29px;
+	background-color:#8F2407;
+	border-radius: 20px;
+	color: #FFFFFF;
+}
+
+#hero {
+    position: relative;
+}
+
+.bg2 {
+    background-color: #56170E;
+}
+
+img {
+    max-width: 100%;
+	height: auto;
+}
+
+/* アイコンを右寄せ */
+.fixed-sidebar {
+  margin-top: 4px;
+  margin-right: -6px;
+  position: static;
+}
+
+.fixed-sidebar .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}
+
+.fixed-sidebar.affix,.fixed-sidebar.affix-bottom{width:213px}
+.fixed-sidebar.affix{position:fixed;top:70px}
+.fixed-sidebar.affix-bottom{position:absolute}
+.fixed-sidebar.affix-bottom .fixed-sidenav,.fixed-sidebar.affix .fixed-sidenav{margin-top:0;margin-bottom:0}
+}@media (min-width:1200px){.fixed-sidebar.affix-bottom,.fixed-sidebar.affix{width:263px}}
