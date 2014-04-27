@@ -46,11 +46,11 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-        <a class="navbar-brand" href="#top">Nutty Western's</a>
+        <a class="navbar-brand" href="<?php echo home_url(); ?>">Nutty Western's</a>
         </div>
         <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-        <li><a href="#about">Contact</a></li>
+        <li><a href="?page_id=10">Contact</a></li>
         <li><a href="#register">Other</a></li>
         </ul> 
         </div>

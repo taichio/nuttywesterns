@@ -21,23 +21,60 @@
     <div class="col col-md-9 main-pad">
       <div class="panel panel-default">
         <div id="news" class="panel-body">
-        <h3>Latest News</h3>
-
-
-        <?php $newslist = get_posts( array(
+        <h4>Latest News</h4>
+        <ul class="news-header">
+        <li>
+                <?php $newslist = get_posts( array(
 		  'category_name' => 'news', 
 		  'posts_per_page' => 10 //取得記事件数
 		));
 		  foreach( $newslist as $post ):
 		  setup_postdata( $post );
 		?>
-        ・<a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a><?php the_time('Y/n/j'); ?></p>
+        <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></p>
+        </li>
+        <li>
+                <p><?php the_time('Y/n/j'); ?></p>
+        </li>
+                <hr />  
         <?php
 		  endforeach;
 		  wp_reset_postdata();
-		?>                             
+		?>    
+        </ul>
+        </div>
+        </div>
+        <hr />   
+    <!-- デモ -->
+    <!--
+      <div class="panel panel-default">
+        <div id="news" class="panel-body">
+        <h4>Latest News</h4>
+        <div class="row">
+        <div class="col col-md-12">
+                <?php $newslist = get_posts( array(
+		  'category_name' => 'news', 
+		  'posts_per_page' => 10 //取得記事件数
+		));
+		  foreach( $newslist as $post ):
+		  setup_postdata( $post );
+		?>
+        <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></p>
+        <?php
+		  endforeach;
+		  wp_reset_postdata();
+		?>      
+        </div>
+        </div>
+        <div class="row">
+        <div class="col col-md-2">
+        <p><?php the_time('Y/n/j'); ?></p>
+        </div>
+        </div>
+        <hr />   
         </div>
       </div>
+      -->
       <div class="panel panel-default">
         <div id="content" class="box2 panel-body">
         <h3>Nutty Western's Are</h3>
